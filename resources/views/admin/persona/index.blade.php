@@ -32,5 +32,5 @@
             @endforeach
         </tbody>
     </table>  
-    {{$personas->links()}}
+    {{$personas->render()}}
 @endSection
