@@ -4,6 +4,9 @@
 @endSection
 @section('icon', 'users')
 @section('title', 'Gestionar personas')
+@section('content-header')
+    <a href="{{route('persona.create')}}" class="btn btn-primary">Agregar</a>
+@endSection
 @section('content')
     <table class="table table-bordered table-striped">
         <thead>
@@ -29,5 +32,5 @@
             @endforeach
         </tbody>
     </table>  
-    {{$personas->render()}}
+    {{$personas->links()}}
 @endSection
