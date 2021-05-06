@@ -8,7 +8,7 @@ use App\Models\Persona;
 class PersonaController extends Controller
 {
     public function index(){
-        $personas = Persona::where('estado', 1)->paginate(1);
+        $personas = Persona::where('estado', 1)->paginate(3);
         // dd($personas);
         return view('admin/persona/index')->with('personas', $personas);
     }

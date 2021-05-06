@@ -10275,3 +10275,25 @@ body {
 .pull-right{
   float:right;
 }
+.text-sm{
+  font-size: 0.8rem;
+} 
+.text-gray-700{
+  font-weight: 700;
+} 
+.leading-5{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.bg-gray-100{
+  background-color: #007bff; 
+}
+.rounded-md{
+  border-radius: 5px;
+}
+.border-gray-300{
+  border-color: #aaa !important;
+}
+.hidden{
+  display: none;
+}
