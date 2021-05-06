@@ -114,6 +114,9 @@
                             <div class="card-header">
                                 <i class="fas fa-@yield('icon') mr-1"></i>
                                 @yield('title')
+                                <span class="pull-right">
+                                    @yield('content-header')                                
+                                </span>
                             </div>
                             <div class="card-body">
                                 @yield('content')
