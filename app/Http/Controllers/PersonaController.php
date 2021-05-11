@@ -20,4 +20,14 @@ class PersonaController extends Controller
         $persona->save();
         return redirect()->route('persona.index');
     }
+    public function edit($id){
+        $persona = Persona::find($id);
+        return view('admin/persona/edit')->with('persona', $persona);
+    }
+    public function update(Request $request, $id){
+        $persona = Persona::find($id);
+        $persona->fill($request->all());
+        $persona->save();
+        return redirect()->route('persona.index');
+    }
 }
