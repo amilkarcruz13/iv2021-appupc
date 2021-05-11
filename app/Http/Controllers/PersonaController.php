@@ -30,4 +30,10 @@ class PersonaController extends Controller
         $persona->save();
         return redirect()->route('persona.index');
     }
+    public function destroy($id){
+        $persona =  Persona::find($id);
+        $persona->estado = 0;
+        $persona->save();
+        return redirect()->route('persona.index');
+    }
 }
