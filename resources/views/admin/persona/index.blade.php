@@ -31,6 +31,9 @@
                         <a href="{{route('persona.edit', $persona->id)}}" class="btn btn-primary">
                             <i class="fa fa-edit"></i>
                         </a>
+                        <a href="{{route('persona.destroy', $persona->id)}}" class="btn btn-danger" onClick="return confirm('Desea eliminar el registro.?')">
+                            <i class="fa fa-trash"></i>
+                        </a>
                     </td>
                 </tr>   
             @endforeach

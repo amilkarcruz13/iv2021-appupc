@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 // Route::get('/persona', [PersonaController::class, 'index']);
 Route::resource('persona', PersonaController::class);
+Route::get('persona/{id}/destroy', [PersonaController::class, 'destroy'])->name('persona.destroy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
