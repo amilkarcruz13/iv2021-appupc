@@ -7,8 +7,13 @@ use App\Models\Persona;
 
 class PersonaController extends Controller
 {
-    public function index(){
-        $personas = Persona::where('estado', 1)->paginate(3);
+    public function index(Request $request){
+        if($request->search){
+            $personas = Persona::where('estado',1)->where('nombre', 'like', '%'.$request->search.'%')->paginate(3);
+        }
+        else{
+            $personas = Persona::where('estado', 1)->paginate(3);
+        }
         // dd($personas);
         return view('admin/persona/index')->with('personas', $personas);
     }

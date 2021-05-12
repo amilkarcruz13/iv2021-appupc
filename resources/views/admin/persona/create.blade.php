@@ -1,6 +1,10 @@
 @extends('template.main.index')
 @section('title', 'Registrar personas')
 @section('icon', 'user')
+@section('action')
+    {{route('persona.index')}}
+@endSection
+@section('placeholder', 'persona')
 @section('content')
     <form action="{{route('persona.store')}}" method="post">
         @csrf

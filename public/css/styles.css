@@ -10297,3 +10297,6 @@ body {
 .hidden{
   display: none;
 }
+.m-l-60{
+  margin-left: 60% !important;
+}
