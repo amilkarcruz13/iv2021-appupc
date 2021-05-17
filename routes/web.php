@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\ClienteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,8 @@ Route::get('/', function () {
 // Route::get('/persona', [PersonaController::class, 'index']);
 Route::resource('persona', PersonaController::class);
 Route::get('persona/{id}/destroy', [PersonaController::class, 'destroy'])->name('persona.destroy');
+
+Route::resource('cliente', ClienteController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
