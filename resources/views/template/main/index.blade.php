@@ -52,6 +52,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                                 Personas
                             </a>
+                            <a class="nav-link" href="{{route('cliente.index')}}" >
+                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                                Clientes
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
